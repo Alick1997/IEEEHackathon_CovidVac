@@ -1,11 +1,14 @@
-.App {
-  text-align: center;
+html,body, #root, .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,18 +18,34 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.NavButtonGrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 5px;
+
 }
+
+.NavButtons {
+  cursor: pointer;
+}
+
+.SecondaryButton {
+  background-color: #FFFFFF;
+  color: #0000;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
